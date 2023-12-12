@@ -1,0 +1,24 @@
+{
+  "name": "back_alle_poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pact-foundation/pact": "^12.1.1",
+    "@types/chai": "^4.3.11",
+    "@types/express": "^4.17.21",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.4",
+    "axios": "^1.6.2",
+    "chai": "^4.3.10",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "typescript": "^5.3.3"
+  }
+}
