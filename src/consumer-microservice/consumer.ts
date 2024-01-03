@@ -1,19 +1,16 @@
 import axios from 'axios';
 
-const PROVIDER_API_URL = 'http://localhost:3000/data';
+const PROVIDER_API_URL = 'http://localhost:3000/products';
 
-export async function fetchDataFromProvider() {
+export async function getProducts() {
   try {
-    // let response;
-    // if (!url) {
     const response = await axios.get(PROVIDER_API_URL);
-    // }else {
-    //   response = await axios.get(url);
-    // }
     console.log('Received data from provider:', response.data);
+    return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);
+    throw error;
   }
 }
 
-fetchDataFromProvider();
+getProducts();
