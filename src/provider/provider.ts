@@ -31,12 +31,12 @@ app.get('/products', (req, res) => {
 
 // get product by id
 app.get('/products/:id', (req, res)=> {
-  let element;
+  let element = {};
   const target = products.find(e => {
-    if (Object.values(e) == req.params.id){
+    if (Object.values(e).toString() == req.params.id){
       element = e
     }
-  
+  res.json(element);
 });
 })
 
