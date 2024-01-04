@@ -24,10 +24,21 @@ const products = [
 //   next(); // Proceed to the next middleware if all headers are present
 // });
 
-// Define a simple endpoint
+// get products endpoint
 app.get('/products', (req, res) => {
   res.json(products);
 });
+
+// get product by id
+app.get('/products/:id', (req, res)=> {
+  let element;
+  const target = products.find(e => {
+    if (Object.values(e) == req.params.id){
+      element = e
+    }
+  
+});
+})
 
 // Start the server
 app.listen(PORT, () => {
